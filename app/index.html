@@ -1,11 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SuperRentals</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title>CSS3_simplistic</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="assets/js/modernizr-1.5.min.js"></script>
 
     {{content-for "head"}}
 
@@ -14,12 +17,23 @@
 
     {{content-for "head-footer"}}
   </head>
-  <body>
-    {{content-for "body"}}
+  
+      {{content-for "body"}}
 
     <script src="assets/vendor.js"></script>
     <script src="assets/super-rentals.js"></script>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="assets/js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
 
-    {{content-for "body-footer"}}
-  </body>
+
+      {{content-for "body-footer"}}
+
 </html>
